@@ -1,0 +1,36 @@
+{
+  "name": "product-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js --port 8080",
+    "build": "echo build",
+    "deploy": "npm run build && npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cassandra-driver": "^3.5.0",
+    "express": "^4.16.4",
+    "express-winston": "^3.0.1",
+    "jsonfile": "^5.0.0",
+    "minimist": "^1.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "supertest": "^3.3.0"
+  }
+}
